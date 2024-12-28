@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>Document</title>
+     <script>
+        $(document).ready(function(){
+            $("p ").click(function(){
+                $(this).hide(1000);
+            });
+            $("#btn1").mousemove(function(){
+                // alert("Hi Waoo You are Dufffer");
+                $("#p2").toggle();
+            });
+        });
+
+        function hideme()
+        {
+            document.getElementById("p2").style.display="none";
+        }
+        function showme()
+        {
+            document.getElementById("p2").style.display="block"
+        } 
+     </script>
+</head>
+<body>
+     <p>Rahul Thakur</p>
+     <p>Jai Shree Ram</p>
+     <p>Web Devloper</p>
+     <br/>
+
+     <p id="p2">How are You I am Fine Then You Go to Hell And Never Come Again</p>
+     <br/>
+     <input type="submit" value="Hide Me" onclick="hideme()">
+     <input type="submit" value="Show Me" onclick="showme()">
+     <!-- <p onclick="showme()">show</p> -->
+     <br/>
+     <p id="p3"></p>
+     <input type="submit" value="Hide Me Show Me" id="btn1">
+</body>
+</html>

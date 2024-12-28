@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><i class='bx bxs-home-circle'></i><span>Logo</span></a>
+
+        <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Products</a></li>
+        </ul>
+
+        <div class="main">
+            <a href="#" class="user"><i class='bx bxs-user'></i>Sign In</a>
+            <a href="#">Register</a>
+            <a href="#"><i class='bx bx-menu menu-icon' id="menu-icon"></i></a>
+        </div>
+    </header>
+   
+</body> 
+</html>
+<script>
+    
+let menu = document.querySelector('.menu-icon');
+let navbar = document.querySelector('.navbar');
+
+menu.onclick = () =>
+{
+     menu.classList.toggle('bx-x');
+     navbar.classList.toggle('open');
+}
+</script>
